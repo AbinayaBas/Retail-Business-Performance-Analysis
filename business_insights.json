@@ -1,0 +1,117 @@
+{
+  "kpis": {
+    "total_sales": 2296919.4883000003,
+    "total_profit": 286409.0805,
+    "profit_margin_pct": 12.469269469779174,
+    "total_orders": 5009,
+    "total_quantity": 37871,
+    "average_order_value": 458.55849237372735,
+    "average_profit_per_order": 57.17889409063685,
+    "top_category_by_sales": "Technology",
+    "top_category_sales": 836154.033,
+    "most_profitable_category": "Technology",
+    "most_profitable_category_profit": 145454.9481,
+    "best_performing_region_by_profit": "West",
+    "best_region_profit": 108418.4489,
+    "best_region_sales": 725457.8245,
+    "best_region_margin_pct": 14.944831420727203,
+    "line_items": 9993,
+    "customers": 793,
+    "products": 1850,
+    "date_min": "2014-01-03",
+    "date_max": "2017-12-30"
+  },
+  "seasonal_highlights": {
+    "best_sales_month": "2017-11",
+    "best_sales_value": 118447.825,
+    "worst_sales_month": "2014-02",
+    "worst_sales_value": 4519.892,
+    "best_profit_month": "2016-12",
+    "best_profit_value": 17885.3093,
+    "worst_profit_month": "2015-01",
+    "worst_profit_value": -3281.007,
+    "highest_margin_month": "2016-10",
+    "highest_margin_pct": 27.213530181111718,
+    "lowest_margin_month": "2015-01",
+    "lowest_margin_pct": -18.053226322003415,
+    "best_season_sales": "Fall",
+    "best_season_profit": "Fall"
+  },
+  "insights": [
+    "Technology is the most profitable category, generating $145.5K profit on $836.2K sales (17.4% margin).",
+    "Furniture is the weakest-margin category at 2.5%, despite $741.7K in sales.",
+    "Tables is a profit-draining sub-category: $207.0K sales produced -$17.7K profit (-8.6% margin).",
+    "Loss-making sub-categories overall: Tables, Bookcases, Supplies.",
+    "West is the strongest region by profit ($108.4K, 14.9% margin), while Central has the weakest regional margin at 7.9% on $501.2K sales.",
+    "Sales peaked in 2017-11 ($118.4K) and were lowest in 2014-02 ($4.5K). Fall is the strongest season by sales.",
+    "The highest monthly profit occurred in 2016-12 ($17.9K); the weakest profit month was 2015-01 (-$3.3K). Highest monthly margin: 2016-10 (27.2%).",
+    "Discounting is a material profit risk: the High (>40%) band delivered -77.4% margin versus 29.5% in the No Discount band.",
+    "Discount is negatively correlated with profit (r = -0.22), while sales and profit move together more weakly (r = 0.48).",
+    "Annual sales moved from $484.0K in 2014 to $733.2K in 2017, with profit margin 10.2% vs 12.7%.",
+    "301 products are net loss-making over the period and should be treated as portfolio risk, not merely low-volume SKUs."
+  ],
+  "recommendations": [
+    {
+      "theme": "Product portfolio optimization",
+      "finding": "Sub-categories currently destroying profit: Tables, Bookcases, Supplies.",
+      "action": "Reprice, bundle, or delist chronic loss-makers after reviewing contribution to customer baskets. Do not expand inventory in these families until margin is positive."
+    },
+    {
+      "theme": "Discount optimization",
+      "finding": "High (>40%) transactions produced -77.4% margin on $128.6K sales.",
+      "action": "Cap deep discounts on already-negative-margin SKUs. Require a margin floor before promotions above 20%, especially in Furniture."
+    },
+    {
+      "theme": "Pricing optimization",
+      "finding": "194 products combine average discount \u2265 20% with negative profit.",
+      "action": "Review list price and promotional eligibility for these SKUs. High-revenue, low-margin items should be repriced before further discounting."
+    },
+    {
+      "theme": "Inventory optimization",
+      "finding": "873 products sit at or below median quantity and order frequency (slow-moving candidates).",
+      "action": "Reduce replenishment on slow movers that are also low-profit. Keep inventory on high-sales/high-profit products that also move quickly."
+    },
+    {
+      "theme": "Regional strategy",
+      "finding": "Central has the weakest margin (7.9%); West has the strongest (14.9%).",
+      "action": "Audit mix and discounting in the weakest-margin region. Replicate assortment and pricing discipline from the strongest-margin region."
+    },
+    {
+      "theme": "Seasonal planning",
+      "finding": "Demand and profit concentrate toward Fall; the weakest sales month in the series is 2014-02.",
+      "action": "Align working capital and promotions with the peak season rather than pushing deep discounts in already-weak months if those months also show poor margins."
+    },
+    {
+      "theme": "Customer segment strategy",
+      "finding": "Consumer contributes the most profit ($134.1K on $1.16M, 11.5% margin). Consumer has the weakest segment margin at 11.5%.",
+      "action": "Protect Consumer share in Technology. Improve mix and discount discipline for Consumer rather than chasing volume alone."
+    },
+    {
+      "theme": "Risk control",
+      "finding": "301 products are net unprofitable.",
+      "action": "Create a monthly 'profit leak' watchlist of the worst 25 SKUs and assign owners for price, discount, or discontinuation decisions."
+    }
+  ],
+  "performance_matrix_counts": {
+    "A. High Sales + High Profit": 6,
+    "D. Low Sales + Low Profit": 5,
+    "C. Low Sales + High Profit": 3,
+    "B. High Sales + Low Profit": 3
+  },
+  "matrix_definitions": {
+    "A. High Sales + High Profit": "Core engines of the business. Protect availability, avoid unnecessary discounting, and invest in inventory and visibility.",
+    "B. High Sales + Low Profit": "Revenue-rich but economically weak. These SKUs inflate the top line while consuming working capital. Immediate pricing, discount, and cost review.",
+    "C. Low Sales + High Profit": "Hidden margin gems. Consider targeted marketing, better placement, or bundling to grow volume without giving away margin.",
+    "D. Low Sales + Low Profit": "Candidates for rationalization. If they are also slow-moving, reduce stock or exit unless they serve a strategic basket role."
+  },
+  "column_mapping": {
+    "Order Date": "Order Date (transaction date)",
+    "Sales": "line-item sales",
+    "Profit": "line-item profit",
+    "Discount": "line-item discount rate",
+    "Quantity": "units sold",
+    "Category / Sub-Category": "product hierarchy",
+    "Region / Segment": "geography and customer type",
+    "Season": "derived from Order Date month (US meteorological grouping)"
+  }
+}

@@ -1,0 +1,32 @@
+cid,name,type,notnull,dflt_value,pk
+0,Row ID,INTEGER,0,,0
+1,Order ID,TEXT,0,,0
+2,Order Date,TEXT,0,,0
+3,Ship Date,TEXT,0,,0
+4,Ship Mode,TEXT,0,,0
+5,Customer ID,TEXT,0,,0
+6,Customer Name,TEXT,0,,0
+7,Segment,TEXT,0,,0
+8,Country,TEXT,0,,0
+9,City,TEXT,0,,0
+10,State,TEXT,0,,0
+11,Postal Code,INTEGER,0,,0
+12,Region,TEXT,0,,0
+13,Product ID,TEXT,0,,0
+14,Category,TEXT,0,,0
+15,Sub-Category,TEXT,0,,0
+16,Product Name,TEXT,0,,0
+17,Sales,REAL,0,,0
+18,Quantity,INTEGER,0,,0
+19,Discount,REAL,0,,0
+20,Profit,REAL,0,,0
+21,Year,INTEGER,0,,0
+22,Month,INTEGER,0,,0
+23,Month Name,TEXT,0,,0
+24,Year Month,TEXT,0,,0
+25,Quarter,INTEGER,0,,0
+26,Season,TEXT,0,,0
+27,Profit Margin,REAL,0,,0
+28,Profit per Unit,REAL,0,,0
+29,Discount Band,TEXT,0,,0
+30,Order Sales,REAL,0,,0
